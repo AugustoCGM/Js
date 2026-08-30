@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 - Ex 001</title>
+
+    <style>  /*estilo interno*/  
+        body{
+            background-color: #151EF9;
+            color: #fff;
+            font-family: Cascadia Code, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>     <!-- Isso é um comentário em HTML -->
+    <p>/*</p>
+    <p>Olá, mundo!</p>
+    <p>/*</p>
+
+    <script>
+        window.alert('Calculadora em JavaScript');
+        var n1 = Number.parseInt(window.prompt('Digite um número:'));
+        var n2 = Number.parseInt(window.prompt('digite outro número:'));
+        var s = n1 + n2;
+        // window.alert('A soma entre ' + n1 + " e " + n2 + " é igual a: " + s);
+        window.alert(`A soma entre ${n1} e ${n2} é igual a: ${s}`); //uso de template string, que é uma forma mais moderna de concatenar strings em JavaScript.
+
+        /* Em Js, o metodo parseInt() converte uma string em um número inteiro. 
+        Já o método parseFloat() converte uma string em um número de ponto flutuante.
+        Mas, se você quiser converter uma string em um número, você pode usar apenas a função Number(), 
+        a propria função, verifica o tipo de dado.
+        */
+
+        /* Além disso, também posso converter um numero em uma string, usando o método n.toString()
+        ou a função String(n) */
+
+    </script>
+</body>
+</html>
