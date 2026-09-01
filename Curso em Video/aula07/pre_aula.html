@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Digite seu nome")
+        var nmr = Number(window.prompt("digite um nmr"))
+        window.alert(`Em letras maiusculas, seu nome é: ${nome.toUpperCase()}`)
+        var resp = nome.length * 10
+        window.alert(`Se cada letra do seu nome lhe concedesse 10 reais, você teria ${resp.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }).replace('.' , ",")}`)
+    </script>
+</body>
+</html>
