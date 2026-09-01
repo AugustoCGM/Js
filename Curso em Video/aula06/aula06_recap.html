@@ -1,0 +1,62 @@
+<!-- Atividade Prática Integrada: "Ficha Financeira e Cadastral" -->
+
+<script>
+    window.alert('Olá, para realizar seu cadastro, por favor, responda:')
+    var nome = window.prompt('Seu nome:')
+    var confNome = window.confirm(`Seu nome é ${nome}?`)
+
+    while (confNome == false){
+        nome = window.prompt('Seu nome:')
+        confNome = window.confirm(`Seu nome é ${nome}?`)
+    }
+
+    var salario = Number(window.prompt('Qual o valor do seu salário?'))
+    var confSal = window.confirm(`Seu salário é de ${salario}?`)
+
+    while (confSal == false){
+        salario = Number(window.prompt('Qual o valor do seu salário?'))
+        confSal = window.confirm(`Seu salário é de ${salario}?`)
+    }
+
+    var desp = Number(window.prompt('Qual o valor médio das suas despesas mensais?'))
+    var confDesp = window.confirm(`Suas despesas médias mensais são de ${desp}?`)
+
+    while (confDesp == false){
+        desp = Number(window.prompt('Qual o valor médio das suas despesas mensais?'))
+        confDesp = window.confirm(`Suas despesas médias mensais são de ${desp}?`)
+    }
+
+    var saldo = salario - desp
+    document.write(`Ficha de: ${nome}<br>`)
+    document.write(`Salario: ${salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}<br>`)
+    document.write(`Despesas: ${desp.toFixed(2).replace('.' , ',')}<br>`)
+    document.write(`Saldo: ${saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}<br><br><br>`)
+
+    document.write(`${nome.toUpperCase()}, ${nome.toLowerCase()} <br> Seu nome tem ${nome.length} letras`)
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    if (confNome == true) {
+        var salario = number(window.prompt('Qual o valor do seu salário?'))
+        var confSal = window.confirm(`Seu salário é de ${salario}?`)
+
+        if (confSal == true) {
+            var desp = number(window.prompt('Qual o valor médio das suas despesas mensais?'))
+            var confDesp = window.confirm(`Suas despesas médias mensais são de ${desp}?`)
+        } 
+    }*/
+   
+
+
+</script>
