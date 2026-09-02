@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Ex 005</title>
+
+    <style> 
+        body{
+            background-color: #151EF9;
+            color: #fff;
+            font-family: Cascadia Code, sans-serif;
+        }
+    </style>
+
+</head>
+
+<!-- Desafio: Sistema de Seleção Esportiva
+Imagine que você precisa verificar se um candidato pode entrar no time de basquete da escola. Os critérios são:
+
+Idade: Deve ser maior ou igual a 15 e menor ou igual a 18 anos.
+Altura: Deve ser maior que 1.70m.
+Experiência: Deve ter experiência prévia (booleano true ou false).
+Sua tarefa:
+
+Crie três variáveis (idade, altura, temExperiencia) e atribua valores a elas.
+Use uma expressão lógica (combinando operadores relacionais e lógicos) para definir se o candidato está apto.
+Use o operador ternário para exibir uma mensagem final: "Apto" ou "Inapto" baseada no resultado da sua expressão. -->
+
+<body>
+    <script>
+       
+        var idade = Number.parseInt(window.prompt('Quantos anos você tem?'))
+        var altura = Number.parseFloat(window.prompt('Qual sua altura?'))
+        var exp = window.confirm('Você já jogou basquete antes? Confirmar para Sim e Cancelar para Não')
+
+        idade >= 15 && idade <= 18 
+        && 
+        altura >= 1.70 
+        && 
+        exp == true 
+        
+        ? window.alert("Apto")
+        : window.alert("Inapto");
+
+        document.write(`Idade: ${idade} <br>`)
+        document.write(`Altura: ${altura}<br>`)
+        idade >= 15 && idade <= 18 
+        && 
+        altura >= 1.70 
+        && 
+        exp == true ? document.write("Apto") : document.write("Inapto");
+
+    </script>
+</body>
+</html>

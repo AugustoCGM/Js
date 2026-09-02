@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Ex 005</title>
+
+    <style> 
+        body{
+            background-color: #151EF9;
+            color: #fff;
+            font-family: Cascadia Code, sans-serif;
+        }
+    </style>
+
+</head>
+
+<!-- Desafio: Conversor de Temperatura e Dias
+Imagine que você precisa criar um script que recebe uma temperatura em Celsius e a converte para Fahrenheit,
+além de converter um total de horas em dias, horas e minutos restantes.
+
+Instruções:
+
+Declare uma variável celsius com um valor à sua escolha.
+Utilize a fórmula de conversão: 
+. Observe como os parênteses garantem a precedência correta.
+Declare uma variável totalHoras (ex: 150).
+Calcule quantos dias completos existem (divisão inteira ou Math.floor) e quantas horas sobram usando o operador de resto (%). -->
+
+<body>
+    <script>
+        var cel = Number(window.prompt("Qual a temperatura atual?"))
+        var frt = (cel * 1.8) + 32
+        var horasTT = Number(window.prompt("Pretende estudar por quantas horas esse ano?"))
+        var dias = Number.parseInt( horasTT / 24)
+        var horas = Number.parseInt(horasTT % 24)
+        var minutos = (horasTT - Number.parseInt(horasTT)) * 100
+        document.write(`Agora fazem ${frt} graus Fahrenheit e você pretende estudar por: <br>
+        ${dias} dias, ${horas} horas e ${Number.parseInt(minutos)} minutos esse ano. Bons estudos!`)
+        
+    </script>
+</body>
+</html>

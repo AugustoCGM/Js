@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 - Ex 001</title>
+
+    <style>  /*estilo interno*/  
+        body{
+            background-color: #151EF9;
+            color: #fff;
+            font-family: Cascadia Code, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>     <!-- Isso é um comentário em HTML -->
+    <p>/*</p>
+    <p>Olá, mundo!</p>
+    <p>/*</p>
+
+    <script>
+       var nome = window.prompt('Olá, qual é o seu nome?');
+       window.confirm('Certo, então seu nome é ' + nome + '?');
+       window.alert('Prazer em te conhecer, ' + nome + '!');
+       document.write(`Prazer em te conhecer, <strong> ${nome}</strong>! Seu nome tem ${nome.length.toFixed(2).replace(7, 'sete')} letras.</br>`); 
+        document.write(`Seu nome em maiúsculas é: <strong> ${nome.toUpperCase()}</strong>! </br>`);
+        document.write(`Seu nome em minúsculas é: <strong> ${nome.toLowerCase()}</strong>! </br>`);
+    </script>
+</body>
+</html>
