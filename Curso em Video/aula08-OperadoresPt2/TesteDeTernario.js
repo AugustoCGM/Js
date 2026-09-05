@@ -1,9 +1,4 @@
 var a = 15
 var b = 51
 
-b > a
-?
-'Verdadeiro'
-
-:
-'Falso'
+b > a ? 'Verdadeiro' : 'Falso'
